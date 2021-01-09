@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import palceholder from '../assets/placeholder.png'
 const Header =()=>(
     <div  className='header'>
         <Link className='option' to='/movies' >Movies</Link>
