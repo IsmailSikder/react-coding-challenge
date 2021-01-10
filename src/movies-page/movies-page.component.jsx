@@ -1,29 +1,21 @@
-import sample from '../feed/sample.json';
 
-const Movies =()=>{
-    const sampleData = sample.entries  
-    console.log(sampleData)  
-        return(
-            <div>
-    
-                 <div>
-                {
-                  sampleData.map(media=>(
-                   
-                     media.programType === 'movie' && media.releaseYear >=2010?
-                     <div>
-                          <p>{media.title}</p>
-                          <p>{media.releaseYear}</p>
-                         <p>{media.programType}</p>
-                     </div>
-                       :
-                       ''
-                   )
-                  )
-                }
-              </div>
-            </div>
-        )
+import PreviewContent from '../components/preview-content/preview-content.component';
+import sampleStreaming from '../feed/sample.json'
+
+const Movies =(props)=>{
+  const stream = sampleStreaming.entries
+  const viewSampleStreming =stream.filter((stream,idx)=>{           
+    return stream.programType==='movie' && stream.releaseYear>=2010
+})
+console.log(viewSampleStreming)
+
+return(
+    <div>
+      <PreviewContent
+        streamingContent = {viewSampleStreming}
+      />
+    </div>
+)
 }
 
 export default Movies

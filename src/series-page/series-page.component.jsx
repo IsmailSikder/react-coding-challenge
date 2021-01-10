@@ -1,27 +1,16 @@
-import sample from '../feed/sample.json';
+import PreviewContent from '../components/preview-content/preview-content.component';
+import sampleStreaming from '../feed/sample.json'
 
 const Series =()=>{
-    const sampleData = sample.entries  
-    console.log(sampleData)  
+  const stream = sampleStreaming.entries
+  const viewSampleStreming =stream.filter((stream,idx)=>{           
+    return stream.programType==='series' && stream.releaseYear>=2010
+})
         return(
             <div>
-    
-                 <div>
-                {
-                  sampleData.map(media=>(
-                   
-                     media.programType === 'series' && media.releaseYear >=2010?
-                       <div>
-                            <p>{media.title}</p>
-                            <p>{media.releaseYear}</p>
-                           <p>{media.programType}</p>
-                       </div>
-                       :
-                       ''
-                   )
-                  )
-                }
-              </div>
+             <PreviewContent
+                streamingContent = {viewSampleStreming}
+             />
             </div>
         )
 }
