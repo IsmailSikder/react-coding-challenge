@@ -6,13 +6,13 @@ const Series =()=>{
   const viewSampleStreming =stream.filter((stream,idx)=>{           
     return stream.programType==='series' && stream.releaseYear>=2010
 })
-        return(
-            <div>
-             <PreviewContent
-                streamingContent = {viewSampleStreming}
-             />
-            </div>
-        )
+return(
+    <div>
+      <PreviewContent
+        streamingContent = {viewSampleStreming}
+      />
+    </div>
+)
 }
 
 export default Series

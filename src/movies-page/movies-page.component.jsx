@@ -4,7 +4,7 @@ import sampleStreaming from '../feed/sample.json'
 
 const Movies =(props)=>{
   const stream = sampleStreaming.entries
-  const viewSampleStreming =stream.filter((stream,idx)=>{           
+  const viewSampleStreming =stream.filter((stream)=>{           
     return stream.programType==='movie' && stream.releaseYear>=2010
 })
 console.log(viewSampleStreming)
