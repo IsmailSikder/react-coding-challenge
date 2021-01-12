@@ -6,6 +6,7 @@ const Home= ()=>{
   //console.log(sampleData)  
   return(
     <div>
+        <h2>Feature Content</h2>
         <StreamingContent/>
     </div>
 )

@@ -11,6 +11,7 @@ console.log(viewSampleStreming)
 
 return(
     <div>
+      <h2>Feature Movies</h2>
       <PreviewContent
         streamingContent = {viewSampleStreming}
       />

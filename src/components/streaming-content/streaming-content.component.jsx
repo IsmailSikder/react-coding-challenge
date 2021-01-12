@@ -12,6 +12,7 @@ const viewSampleStreming =stream.filter((stream,idx)=>{
  
 return(
     <div>
+        
         <PreviewContent
             streamingContent = {viewSampleStreming}
         />

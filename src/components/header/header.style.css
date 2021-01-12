@@ -16,7 +16,20 @@
     padding:10%;
     cursor: pointer;
     justify-content: flex-end;
-    background: url("../../assets/placeholder.png");  
 }
+
+.movie_div{
+   
+    align-items: center;
+    background-image: url("../../assets/placeholder.png");  
+}
+
+.image {
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+    }
 
   

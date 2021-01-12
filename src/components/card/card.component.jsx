@@ -10,7 +10,7 @@ export const StreamingCard = (props)=>{
   //console.log(image)
 return(
     <div className= 'card-container' >
-      <img  alt='Monster' src={image.url} style={{hight: 70,width:250}} />
+      <img  alt='media' src={image.url} style={{hight: 70,width:250}} />
       <h2>{title}</h2>
       <p>{discription}</p>
       <p>{programType}</p>

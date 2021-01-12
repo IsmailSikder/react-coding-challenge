@@ -8,6 +8,7 @@ const Series =()=>{
 })
 return(
     <div>
+      <h2>TV Series</h2>
       <PreviewContent
         streamingContent = {viewSampleStreming}
       />
